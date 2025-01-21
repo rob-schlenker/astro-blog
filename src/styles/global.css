@@ -76,6 +76,14 @@ html.dark {
   color: #ff9776;
 }
 
+.dark p {
+  color: #dfdfdf;
+}
+
+.dark li {
+  color: #dfdfdf;
+}
+
 @media screen and (min-width: 636px) {
 
   .nav-links {
