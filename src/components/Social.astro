@@ -5,9 +5,18 @@ const { platform, username } = Astro.props;
 
 <style>
     a {
-      padding: 0.5rem 1rem;
-      color: white;
-      background-color: #4c1d95;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;  /* Fixed width for all social links */
+      padding: 0.5rem;
+      border-radius: 1.25rem;
       text-decoration: none;
+      background-color: #4c1d95;
+    }
+
+    /* Optional: Add hover state */
+    a:hover {
+      background-color: #9873ce;
     }
   </style>
