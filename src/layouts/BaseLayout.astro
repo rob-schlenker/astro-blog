@@ -14,11 +14,19 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <h1 class="gold">{pageTitle}</h1>
+    <h1 class="gold box">{pageTitle}</h1>
     <slot />
     <Footer />
+
     <script>
       import "../scripts/menu.js";
+      import { gsap } from "gsap";
+
+      var tl = gsap.timeline();
+      tl.from(".box", { duration: 2, x: 150 })
+
     </script>
+
   </body>
 </html>
+
